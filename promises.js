@@ -1,5 +1,5 @@
 // Calling the fetch() api and returning a Promise object
-const fetchPromise = fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",);
+const fetchPromise = fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
   
 // Prints the current state of Promise
 console.log(fetchPromise);
