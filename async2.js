@@ -15,11 +15,10 @@ async function fetchData(url) {
 
 module.exports = {fetchData};
 
-/* 
-
-const promise = fetchData("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
-promise.then((response) => {
-    console.log(`Fetch response: ${response[0].name}`);
-}) 
-
-*/
+// The following code only runs when async2 is the entry point script file.
+if (__filename === require.main.filename) {
+    const promise = fetchData("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
+    promise.then((response) => {
+        console.log(`Fetch response: ${response[0].name}`);
+    }) 
+}

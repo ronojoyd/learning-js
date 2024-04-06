@@ -7,7 +7,7 @@ async function getCurrentWeather() {
         const forecastData = await fetchData(weatherAPI["properties"]["forecast"]);
 
         // Prints current temperature
-        console.log(`The current temperature is ${forecastData["properties"]["periods"][0]["temperature"]} degrees.`);
+        console.log(`The current temperature in Glen Allen, VA is ${forecastData["properties"]["periods"][0]["temperature"]} degrees.`);
     } catch(error) {
         console.log(`Something went wrong... ${error}`);
     }
