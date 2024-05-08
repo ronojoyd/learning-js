@@ -1,7 +1,7 @@
 function setAlarm(name, delayInSec) {
     return new Promise((resolve, reject) => {
         if (delayInSec < 0) {
-            throw new error("Time input can't be negative.");
+            throw new Error("Time input can't be negative.");
         }
         setTimeout(() => {
             resolve(`Wake up, ${name}!`);
